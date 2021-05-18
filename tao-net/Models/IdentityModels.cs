@@ -25,7 +25,7 @@ namespace tao_net.Models
 
 
         public ApplicationDbContext()
-            : base("mssql8.taonet.dbo", throwIfV1Schema: false)
+            : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 
