@@ -20,8 +20,12 @@ namespace tao_net.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        DbSet<Customer> Customers { get; set; }
+
+
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("mssql8.taonet.dbo", throwIfV1Schema: false)
         {
         }
 
