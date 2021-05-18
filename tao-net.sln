@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tao-net", "tao-net\tao-net.csproj", "{97A11852-2972-4AB3-8A3F-6E100F2DF52D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A11852-2972-4AB3-8A3F-6E100F2DF52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A11852-2972-4AB3-8A3F-6E100F2DF52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A11852-2972-4AB3-8A3F-6E100F2DF52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A11852-2972-4AB3-8A3F-6E100F2DF52D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {459E5A6C-D3F2-4B1F-9A1F-27F71242FE12}
+	EndGlobalSection
+EndGlobal
