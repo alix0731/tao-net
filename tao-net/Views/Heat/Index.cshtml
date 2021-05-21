@@ -1,0 +1,46 @@
+﻿@model tao_net.ViewModels.HeatViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+<h2>Varme typer:</h2>
+
+<br />
+
+<table class="table table-bordered table-hover" >
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Pris</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.HeatTypes.Count == 0)
+        {
+            
+        }
+        else
+        {
+            foreach(var heatType in Model.HeatTypes)
+            {
+                <tr>
+                    <td>@heatType.Name</td>
+                    <td>@heatType.Price</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+

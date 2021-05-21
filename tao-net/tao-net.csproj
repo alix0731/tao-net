@@ -168,6 +168,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\HeatController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -181,13 +183,28 @@
     <Compile Include="Migrations\202105181523257_AddCustomer1.Designer.cs">
       <DependentUpon>202105181523257_AddCustomer1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105201215524_AddHeatType.cs" />
+    <Compile Include="Migrations\202105201215524_AddHeatType.Designer.cs">
+      <DependentUpon>202105201215524_AddHeatType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105201219008_CustomerForreignkey.cs" />
+    <Compile Include="Migrations\202105201219008_CustomerForreignkey.Designer.cs">
+      <DependentUpon>202105201219008_CustomerForreignkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105201315495_addDataToHeatTypeTabel.cs" />
+    <Compile Include="Migrations\202105201315495_addDataToHeatTypeTabel.Designer.cs">
+      <DependentUpon>202105201315495_addDataToHeatTypeTabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\HeatType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\HeatViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -246,6 +263,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Customer\Order.cshtml" />
+    <Content Include="Views\Heat\Index.cshtml" />
+    <Content Include="Views\Customer\Confirmation.cshtml" />
+    <Content Include="Views\Customer\Orders.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -269,6 +291,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105181523257_AddCustomer1.resx">
       <DependentUpon>202105181523257_AddCustomer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105201215524_AddHeatType.resx">
+      <DependentUpon>202105201215524_AddHeatType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105201219008_CustomerForreignkey.resx">
+      <DependentUpon>202105201219008_CustomerForreignkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105201315495_addDataToHeatTypeTabel.resx">
+      <DependentUpon>202105201315495_addDataToHeatTypeTabel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

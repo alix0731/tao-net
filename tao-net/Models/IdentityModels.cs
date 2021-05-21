@@ -21,7 +21,8 @@ namespace tao_net.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
 
-        DbSet<Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<HeatType> HeatTypes { get; set; }
 
 
         public ApplicationDbContext()

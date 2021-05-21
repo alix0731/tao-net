@@ -1,0 +1,36 @@
+﻿@model tao_net.Models.Customer
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12 align-self-center">
+                        <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+
+                            <h2><em>Oplysninger om </em> <span>@Model.FirstName @Model.LastName</span></h2>
+                           
+                            <br />
+                            <ul class="list-group">
+                                <li class="list-group-item"><b>ID: </b>@Model.Id</li>
+                                <li class="list-group-item"><b>Tlf: </b>+45 @Model.Phone</li>
+                                <li class="list-group-item"><b>Email: </b>@Model.Email</li>
+                                <li class="list-group-item"><b>Adresse: </b>@Model.Address</li>
+                                <li class="list-group-item"><b>Postnummer: </b>@Model.Zip</li>
+                                
+                            </ul>
+
+
+                          
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
