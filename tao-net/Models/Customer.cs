@@ -19,7 +19,7 @@ namespace tao_net.Models
         public int Phone { get; set; }
         [Display(Name = "Adresse:")]
         public string Address { get; set; }
-        [Display(Name = "Post nummer:")]
+        [Display(Name = "Postnummer:")]
         public int Zip { get; set; }
      
         public HeatType heatType { get; set; }

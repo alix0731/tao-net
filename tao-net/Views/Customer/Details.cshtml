@@ -12,19 +12,29 @@
                         <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
 
                             <h2><em>Oplysninger om </em> <span>@Model.FirstName @Model.LastName</span></h2>
-                           
+
                             <br />
+
+
+
                             <ul class="list-group">
                                 <li class="list-group-item"><b>ID: </b>@Model.Id</li>
                                 <li class="list-group-item"><b>Tlf: </b>+45 @Model.Phone</li>
                                 <li class="list-group-item"><b>Email: </b>@Model.Email</li>
                                 <li class="list-group-item"><b>Adresse: </b>@Model.Address</li>
                                 <li class="list-group-item"><b>Postnummer: </b>@Model.Zip</li>
-                                
+                                <li class="list-group-item"><b>Varme ID: </b>@Model.HeatTypeId</li>
+
                             </ul>
 
+                            <div>
+                                <a href="/Customer/Edit/@Model.Id" class="col-lg-6 btn btn-primary">Ændre bestilling</a>
+                                
+                                <a href="/Customer/Delete/@Model.Id" class=" col-lg-6 btn btn-danger">Slet bestilling</a>
 
-                          
+                            </div>
+                         
+
 
                         </div>
                     </div>

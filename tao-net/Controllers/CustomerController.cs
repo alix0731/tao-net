@@ -41,11 +41,24 @@ namespace tao_net.Controllers
             if(customer.Id == 0)
             {
                 _context.Customers.Add(customer);
+                return RedirectToAction("Confirmation");
+            }
+            else
+            {
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+
+                customerInDb.FirstName = customer.FirstName;
+                customerInDb.LastName = customer.LastName;
+                customerInDb.Email = customer.Email;
+                customerInDb.Phone = customer.Phone;
+                customerInDb.Address = customer.Address;
+                customerInDb.Zip = customer.Zip;
+                customerInDb.HeatTypeId = customer.HeatTypeId;
             }
 
             _context.SaveChanges();
 
-            return RedirectToAction("Confirmation");
+            return RedirectToAction("Orders", "Customer");
         }
 
         public ActionResult Confirmation()
@@ -68,5 +81,35 @@ namespace tao_net.Controllers
             
             return View(customer);
         }
+
+        
+        public ActionResult Delete(int Id)
+        {
+            Customer customer = _context.Customers.SingleOrDefault(c => c.Id == Id);
+
+            _context.Customers.Remove(customer);
+            _context.SaveChanges();
+
+            return RedirectToAction("Orders");
+        }
+
+        public ActionResult Edit(int Id)
+        {
+            Customer customer = _context.Customers.SingleOrDefault(c => c.Id == Id);
+
+            if(customer == null)
+            {
+                return HttpNotFound();
+            }
+
+            var viewModel = new CustomerViewModel
+            {
+                Customer = customer
+            };
+
+
+            return View("Order", viewModel);
+        }
+
     }
 }

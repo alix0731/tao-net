@@ -44,19 +44,22 @@ else
                 <th>Varmeanlæg</th>
                 <th>Pris pr.måned</th>
                 <th></th>
+               
             </tr>
         </thead>
         <tbody>
             @foreach (var customer in Model.Customers)
             {
-                <tr>
-                    <td>@customer.Id</td>
-                    <td>@customer.FirstName</td>
-                    <td>@customer.LastName</td>
-                    <td>@customer.heatType.Name</td>
-                    <td>@customer.heatType.Price</td>
-                    <td><a href="/Customer/Details/@customer.Id" class="btn btn-primary">Flere oplysniger</a></td>
-                </tr>
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.LastName</td>
+                <td>@customer.heatType.Name</td>
+                <td>@customer.heatType.Price kr</td>
+                <td><a href="/Customer/Details/@customer.Id" class="btn btn-primary">Flere oplysniger</a></td>
+                
+
+            </tr>
             }
         </tbody>
     </table>
