@@ -9,6 +9,7 @@ using System.Data.Entity;
 
 namespace tao_net.Controllers
 {
+    [Authorize]
     public class CustomerController : Controller
     {
 
