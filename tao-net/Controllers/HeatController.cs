@@ -41,7 +41,11 @@ namespace tao_net.Controllers
             
         }
 
+        public ActionResult VarmeTakster()
+        {
+            return View();
 
+        }
 
     }
 }

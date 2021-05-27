@@ -272,6 +272,7 @@
     <Content Include="Views\Heat\Calculator.cshtml">
       <BrowseToURL>~/Heat/Calculator</BrowseToURL>
     </Content>
+    <Content Include="Views\Heat\VarmeTakster.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
