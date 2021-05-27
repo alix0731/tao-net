@@ -269,6 +269,9 @@
     <Content Include="Views\Customer\Orders.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Shared\_Layout_Admin.cshtml" />
+    <Content Include="Views\Heat\Calculator.cshtml">
+      <BrowseToURL>~/Heat/Calculator</BrowseToURL>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

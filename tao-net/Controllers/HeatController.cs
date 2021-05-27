@@ -33,5 +33,15 @@ namespace tao_net.Controllers
 
             return View(viewModel);
         }
+
+        // test GET: iframe
+        public ActionResult Calculator()
+        { 
+            return View();
+            
+        }
+
+
+
     }
 }
