@@ -42,6 +42,7 @@ namespace tao_net.Controllers
             if(customer.Id == 0)
             {
                 _context.Customers.Add(customer);
+                _context.SaveChanges();
                 return RedirectToAction("Confirmation");
             }
             else
@@ -64,15 +65,22 @@ namespace tao_net.Controllers
 
         public ActionResult Confirmation()
         {
+            
             return View("Confirmation");
         }
 
         public ActionResult Orders()
         {
+
+          
+
             var viewModel = new CustomerViewModel
             {
                 Customers = _context.Customers.Include(c => c.heatType).ToList()
             };
+
+          
+
             return View(viewModel);
         }
 
