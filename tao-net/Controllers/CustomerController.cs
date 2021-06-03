@@ -69,6 +69,7 @@ namespace tao_net.Controllers
             return View("Confirmation");
         }
 
+        [Authorize]
         public ActionResult Orders()
         {
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Albertslund Fjernvarme</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -23,11 +23,10 @@
                 <!-- ***** Logo End ***** -->
                 <!-- ***** Menu Start ***** -->
                 <ul class="nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Om os", "About", "Home")</li>
-                    <li>@Html.ActionLink("Bestil", "Index", "Customer")</li>
                     <li>@Html.ActionLink("Energibesparelser", "Index", "Heat")</li>
                     <li>@Html.ActionLink("Rådgiver", "BookMeeting", "Heat")</li>
+                    <li>@Html.ActionLink("Bestil", "Index", "Customer")</li>
+                    <li>@Html.ActionLink("Om os", "About", "Home")</li>
                     @Html.Partial("_LoginPartial")
                     <li class="scroll-to-section"><div class="main-red-button">@Html.ActionLink("Kontakt", "Contact", "Home")</div></li>
                 </ul>
